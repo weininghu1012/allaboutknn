@@ -1,0 +1,2 @@
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+#### allaboutknn is a package intend to prepare your data for conducting k nearest neighbor methods in machine learning.
