@@ -1,8 +1,14 @@
 Package: allaboutknn
-Title: What the Package Does (one line, title case)
+Title: Explore KNN(k-nearest neighbors) methods for dataset.
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-Depends: R (>= 3.2.2)
-License: What license is it under?
+Authors@R: person("Weining", "Hu", email = "weininghu1012@gmail.com", role = c("aut", "cre"))
+Description: In this package...
+Depends: 
+    R (>= 3.2.2)
+License: MIT + file LICENSE
 LazyData: true
+RoxygenNote: 5.0.1
+Suggests: testthat
+Imports: ggfortify
+URL: https://github.com/weininghu1012/allaboutknn
+BugReports: https://github.com/weininghu1012/allaboutknn/issues
