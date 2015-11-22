@@ -9,3 +9,44 @@ output:
 #### allaboutknn is a package intend to prepare your data for conducting k nearest neighbor methods in machine learning.
 
 
+#### How to install?
+```{r , eval=FALSE}
+library(devtools)
+install_github("weininghu1012/allaboutknn")
+
+```
+
+
+
+
+#### Function1: show_cluster()
+
+[KNN](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) is a non-parametric method used for classification and regression. The main idea is that we classify similar objects according to euclidean distances. To visualize this, show_cluster() would give you an example to see how data within same category come together.
+
+```{r}
+# You might need ggfortify to use the function
+library(ggfortify)
+library(allaboutknn)
+iris = read.csv(file = '/Users/weininghu/Documents/study/ubc2015w1/stat545/dataset/iris.csv',header = TRUE)
+show_cluster(iris)
+
+```
+
+#### Function 2: normalize
+
+
+Why we need to normalize data? Sometimes the data we have may have a really large range.Then in this case, the distance may be dominated by that specific feature. When you normalize, you actually adjust the range of all features, so that distances between variables with larger ranges will not be over-emphasised. There are many ways to scale your data, [click here](https://en.wikipedia.org/wiki/Feature_scaling). A good way to check the data range is calling summary() in R.
+
+```{r}
+summary(iris)
+# we apply normalize function
+
+normalized_iris = as.data.frame(lapply(iris[1:4], normalize))
+summary(normalized_iris)
+
+
+```
+
+
+
+

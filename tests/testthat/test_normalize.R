@@ -7,15 +7,15 @@ test_that('Inappropriate data input format',{
 
 })
 
-# test_that('Correct case',{
-#   y = c(100,2,4,-30)
-#   num = y-min(y)
-#   denom = max(y)-min(y)
-#   expected_y = num/denom
-#   expect_identical(normalize(X=y),expected_y)
-#
-#
-# })
+test_that('Correct case',{
+  y = c(100,2,4,-30)
+  num = y-min(y)
+  denom = max(y)-min(y)
+  expected_y = num/denom
+  expect_identical(normalize(y),expected_y)
+
+
+})
 
 
 

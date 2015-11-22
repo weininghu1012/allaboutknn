@@ -2,3 +2,4 @@
 
 export(normalize)
 export(show_cluster)
+import(ggfortify)

@@ -2,6 +2,8 @@
 #' Takes in the Iris dataframe and show the PCA result.
 #' @param df The dataset
 #' @return A plot of clusters
+
+#' @import ggfortify
 #' @export
 
 

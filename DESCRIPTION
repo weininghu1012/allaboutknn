@@ -11,7 +11,10 @@ RoxygenNote: 5.0.1
 Suggests: testthat,
     knitr,
     rmarkdown
-Imports: ggfortify
+Imports: ggfortify,
+    ggplot2,
+    knitr,
+    survMisc
 URL: https://github.com/weininghu1012/allaboutknn
 BugReports: https://github.com/weininghu1012/allaboutknn/issues
 VignetteBuilder: knitr

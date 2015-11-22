@@ -5,10 +5,10 @@
 #' @export
 
 normalize <- function(x) {
-  if(!is.numeric(X)) {
-    stop('I am so sorry, but this function only works for dataframe input,
-         You have provided an object of class: ', class(x))
-  }
+   if(!is.numeric(x)) {
+     stop('I am so sorry, but this function only works for dataframe input,
+          You have provided an object of class: ', class(x))
+   }
   num <- x - min(x)
   denom <- max(x) - min(x)
   return (num/denom)
