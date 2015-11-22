@@ -8,7 +8,10 @@ Depends:
 License: MIT + file LICENSE
 LazyData: true
 RoxygenNote: 5.0.1
-Suggests: testthat
+Suggests: testthat,
+    knitr,
+    rmarkdown
 Imports: ggfortify
 URL: https://github.com/weininghu1012/allaboutknn
 BugReports: https://github.com/weininghu1012/allaboutknn/issues
+VignetteBuilder: knitr
